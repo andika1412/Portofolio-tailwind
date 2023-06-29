@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portofolio tailwind css</title>
+    <link rel="stylesheet" href="dist/output.css" />
+  </head>
+  <body>
+    <!-- header start -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+      <div class="container">
+        <div class="flex items-center justify-between relativ">
+          <div class="px-4">
+            <a href="#home"> <img src="dist/logo1.png" width="110" class="block py-6" /></a>
+          </div>
+          <div class="flex items-center px-4">
+            <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+              <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+              <span class="hamburger-line transition duration-300 ease-in-out"></span>
+              <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+            </button>
+
+            <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a class="text-base text-dark py-2 mx-8 flex group-hover:text-primary" href="#home"> Beranda</a>
+                </li>
+                <li class="group">
+                  <a class="text-base text-dark py-2 mx-8 flex group-hover:text-primary" href="#about"> Tentang Saya</a>
+                </li>
+                <li class="group">
+                  <a class="text-base text-dark py-2 mx-8 flex group-hover:text-primary" href="#portofolio"> Portofolio</a>
+                </li>
+                <li class="group">
+                  <a class="text-base text-dark py-2 mx-8 flex group-hover:text-primary" href="#contact"> Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- hero section start -->
+    <section id="home" class="pt-36">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center px-4 lg:w-1/2">
+            <h1 class="text-base font-semibold text-primary lg:text-xl">hallo semua ✋, saya <span class="block font-bold text-black text-4xl mt-1 lg:text-5xl">andika putra</span></h1>
+            <h2 class="font-medium text-secondary text-lg mt-1 mb-5 lg:2xl"><span class="text-black">UI/UX Designer </span> & Programmer</h2>
+            <p class="font-medium text-secondary mb-10 leading-relaxed">pengalaman pengguna yang baik adalah kepuasan bagi seorang UX Designer</p>
+            <a href="#" class="text-base font-semibold text-white bg-primary px-8 py-3 rounded-full hover:shadow-lg hover:opacity-80 transitio duration-300 ease-in-out">Hubungi saya</a>
+          </div>
+          <div class="w-full self-end px-4 lg:w-1/2">
+            <div class="mt-10 relative lg:mt-9 lg:right-0">
+              <img src="dist/saya1.png" alt="andika" class="max-w-full mx-auto" />
+              <span class="absolute bottom-0 -z-10 left-1/2 -translate-x-1/2 md:scale-125">
+                <svg width="400" height="520" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill="#14b8a6"
+                    d="M50,-39.4C64.1,-22.1,74.4,-1.4,71,17.2C67.5,35.9,50.4,52.4,32.5,56.9C14.6,61.5,-4,54.2,-22.1,45.6C-40.3,37,-58.1,27.1,-63.4,12.2C-68.6,-2.8,-61.4,-23,-48.7,-39.9C-36,-56.7,-18,-70.4,-0.1,-70.3C17.9,-70.3,35.8,-56.6,50,-39.4Z"
+                    transform="translate(100 100) scale(1.1)"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- hero section end -->
+    <!-- About Section Part  -->
+    <section id="About" class="pt-36 pb-32">
+      <div class="container">
+        <div class="">
+          <div class="w-full px-4 mb-5 text-center lg:w-5/6 lg:mx-auto">
+            <h4 class="font-bold uppercase text-lg text-primary mb-3">About Me</h4>
+            <h2 class="font-bold text-dark text-3xl mb-5 lg:text-4xl">UX Designer with a strong focus on problem solving and innovation.</h2>
+            <p class="font-medium text-base text-secondary lg:text-lg">
+              My passion for building digital products is shaped by having the mindset of putting humans in the center of attention; to ensure the product team is solving the right problem for the people. My design process is backed-up with
+              the iterative approach of user research, problem def`inition, hypotheses creations, prototyping, and testing. My strong focus is on discovery research and building design concepts that will enable organizations in defining a
+              new strategy or product opportunities to help the business gain its competitive advantage.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section End  -->
+
+    <!-- About Section Part  -->
+    <!-- <section id="About" class="pt-36 pb-32">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 mb-10 lg:w-1/2">
+            <h4 class="font-bold uppercase text-lg text-primary mb-3">Tentang Saya</h4>
+            <h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl">yuk, belajar web programing di wpu!</h2>
+            <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque iste sint laudantium necessitatibus praesentium, nostrum animi.</p>
+          </div>
+          <div class="full px-4 lg:w-1/2">
+            <h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10">Mari berteman</h3>
+            <p class="font-medium text-base text-secondary mb-6  lg:text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est iste adipisci consequatur eius cupiditate earum, aperiam alias officia.</p>
+            <div class="flex items-center">
+
+             
+              <a href="https.youtube.com" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white text-slate-300">
+                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <title>Instagram</title>
+                  <path
+                    d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
+                  />
+                </svg>
+              </a>
+
+            
+              <a href="https.youtube.com" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white text-slate-300">
+                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <title>LinkedIn</title>
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                  />
+                </svg>
+
+              
+              <a href="https.youtube.com" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white text-slate-300">
+                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Behance</title><path d="M0 4.4804V19.243h7.1554c.6613 0 1.3078-.0832 1.9297-.248.6288-.1654 1.1905-.4203 1.6792-.7661.485-.3431.8784-.788 1.1677-1.3369.2862-.542.4294-1.187.4294-1.9354 0-.9232-.219-1.7109-.6675-2.369-.446-.6542-1.1187-1.1139-2.0274-1.3746.6674-.3161 1.1658-.7227 1.506-1.2177.3371-.4967.5058-1.1174.5058-1.8607 0-.6873-.1127-1.2677-.3375-1.7318-.2306-.4709-.552-.8452-.9632-1.1266-.4176-.2808-.912-.4857-1.4912-.6085-.5827-.1261-1.22-.1872-1.9264-.1872zm15.6674.9903v1.4567h5.9844V5.4707zM3.2509 6.9947h3.0407c.2873 0 .5683.0204.8359.0731.2728.0466.508.134.716.2595.2096.1205.3754.293.501.5132.1208.2203.1806.5038.1806.8474 0 .6189-.1811 1.0702-.5551 1.3426-.3778.2775-.8543.4147-1.4304.4147H3.2509zm15.545 1.2564c-.819 0-1.5587.1462-2.2294.436-.6705.2904-1.2463.6875-1.7318 1.1915-.4846.5011-.8535 1.0986-1.12 1.7909-.2612.69-.3942 1.4366-.3942 2.236 0 .8268.1284 1.5891.3835 2.2786.258.6923.6198 1.2822 1.0856 1.781.478.4967 1.046.8784 1.726 1.1497.6806.269 1.4382.4048 2.2803.4048 1.208 0 2.2446-.2771 3.0949-.8326.8599-.5528 1.4902-1.471 1.9058-2.7574h-2.585c-.1.3307-.359.649-.784.9467-.4295.2988-.9417.4492-1.534.4492-.8233 0-1.4588-.2168-1.8985-.6462-.4412-.4294-.7267-1.2289-.7267-2.0742h7.713c.0552-.8291-.0122-1.6218-.2045-2.3797-.1938-.7601-.5033-1.4365-.9393-2.029-.4355-.5931-.9904-1.0667-1.667-1.4165-.6788-.3543-1.4703-.5288-2.3747-.5288zm-.0887 2.217c.7209 0 1.3126.2092 1.6612.5954.3503.389.6065.9432.6766 1.6915h-4.7766c.0136-.2085.058-.4444.1339-.7045.0749-.2668.2039-.5164.3933-.753.1905-.2326.4402-.431.744-.5896.3109-.1608.6986-.2397 1.1676-.2397zM3.251 12.664h3.5334c.6996 0 1.2682.1602 1.6948.4836.4259.328.6405.8685.6405 1.6292 0 .3885-.0632.7094-.1946.9566-.131.2495-.3106.4466-.528.5896-.2172.1491-.4753.2498-.7661.3137-.2862.0639-.5905.092-.9115.092H3.2509z"/></svg>
+              </a>
+
+              
+              <a href="https.youtube.com" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white text-slate-300">
+                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Dribbble</title><path d="M12 24C5.385 24 0 18.615 0 12S5.385 0 12 0s12 5.385 12 12-5.385 12-12 12zm10.12-10.358c-.35-.11-3.17-.953-6.384-.438 1.34 3.684 1.887 6.684 1.992 7.308 2.3-1.555 3.936-4.02 4.395-6.87zm-6.115 7.808c-.153-.9-.75-4.032-2.19-7.77l-.066.02c-5.79 2.015-7.86 6.025-8.04 6.4 1.73 1.358 3.92 2.166 6.29 2.166 1.42 0 2.77-.29 4-.814zm-11.62-2.58c.232-.4 3.045-5.055 8.332-6.765.135-.045.27-.084.405-.12-.26-.585-.54-1.167-.832-1.74C7.17 11.775 2.206 11.71 1.756 11.7l-.004.312c0 2.633.998 5.037 2.634 6.855zm-2.42-8.955c.46.008 4.683.026 9.477-1.248-1.698-3.018-3.53-5.558-3.8-5.928-2.868 1.35-5.01 3.99-5.676 7.17zM9.6 2.052c.282.38 2.145 2.914 3.822 6 3.645-1.365 5.19-3.44 5.373-3.702-1.81-1.61-4.19-2.586-6.795-2.586-.825 0-1.63.1-2.4.285zm10.335 3.483c-.218.29-1.935 2.493-5.724 4.04.24.49.47.985.68 1.486.08.18.15.36.22.53 3.41-.43 6.8.26 7.14.33-.02-2.42-.88-4.64-2.31-6.38z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- About Section End  -->
+
+    <!-- what i do section start -->
+    <section id="contact" class="pt-28 pb-16 bg-slate-700">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full px-6 mb-10 lg:w-1/2">
+            <h4 class="font-bold uppercase text-lg text-primary mb-3">What I Do</h4>
+            <h2 class="font-bold text-white text-3xl mb-5 max-w-md lg:text-4xl">User Research</h2>
+            <ul style="list-style-type: disc" class="font-medium text-base text-white max-w-xl lg:text-lg">
+              <li>Apply mixed methods of qualitative research (usability test, field study, remote studies, interviews, surveys, tree test, card sort)</li>
+              <li>Experience in conducting user research for different customer-facing products for the web app, mobile apps (iOS & Android) and internal tool</li>
+            </ul>
+          </div>
+
+          <div class="w-full px-6 mb-10 lg:w-1/2 lg:mt-8">
+            <h2 class="font-bold text-white text-3xl mb-5 max-w-md lg:text-4xl">Ux Strategy</h2>
+            <ul style="list-style-type: disc" class="font-medium text-base text-white max-w-xl lg:text-lg">
+              <li>Initiated and established a UX Research process in the organization</li>
+              <li>
+                Integrate User-Centric Design framework inside the product development process: demonstrate how research could be implemented in different stages of the product development cycle and setting up a process on how it could be
+                done in a collaborative way.
+              </li>
+              <li>Designed and facilitated User-Centric Design in Product Development training programs to Product Managers and stakeholders</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="w-full px-6 mb-10 lg:w-1/2">
+          <h2 class="font-bold text-white text-3xl mb-5 max-w-md lg:text-4xl">Ux Strategy</h2>
+          <ul style="list-style-type: disc" class="font-medium text-base text-white max-w-xl lg:text-lg">
+            <li>Initiated and established a UX Research process in the organization</li>
+            <li>
+              Integrate User-Centric Design framework inside the product development process: demonstrate how research could be implemented in different stages of the product development cycle and setting up a process on how it could be
+              done in a collaborative way.
+            </li>
+            <li>Designed and facilitated User-Centric Design in Product Development training programs to Product Managers and stakeholders</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- what i do section end -->
+
+    <!-- portofolio section start -->
+    <section id="portofolio" class="pt-28 pb-16 bg-slate-100">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="max-w-xl mx-auto text-center mb-6">
+            <h4 class="font-semibold text-lg text-primary mb-2">Portofolio</h4>
+            <h2 class="font-bold text-dark text-3xl mb-4">Project Terbaru</h2>
+            <p class="font-medium text-md text-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde quasi cupiditate quidem mollitia repellendus veritatis cumque et. Ullam, quo officia.</p>
+          </div>
+        </div>
+
+        <div class="w-full px-4 flex flex-wrap justify-center">
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="rounded-md shadow-md overflow-hidden">
+              <img src="dist/1.png" alt="landing page" width="w-full" />
+            </div>
+            <h3 class="font-semibold text-dark text-xl mt-5 mb-3">Titik Baca Digital Design App</h3>
+            <p class="font-medium text-base text-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium animi cum error, eum iusto cumque iste debitis eius nemo atque.</p>
+          </div>
+
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="rounded-md shadow-md overflow-hidden">
+              <img src="dist/2.png" alt="landing page" width="w-full" />
+            </div>
+            <h3 class="font-semibold text-dark text-xl mt-5 mb-3">Titik Baca Digital Design App</h3>
+            <p class="font-medium text-base text-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium animi cum error, eum iusto cumque iste debitis eius nemo atque.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- portofolio section end -->
+
+    <!-- footer section -->
+
+    <!-- <section id="contact" class="pt-36 pb-32">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="max-w-full mx-auto text-center mb-16">
+            <h4 class="font-semibold text-lg text-primary mb-2">Contact</h4>
+            <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl"> Hubungi Kami</h2>
+            <p class="font-medium text-md text-secondary md:text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae officia temporibus amet modi, saepe ea voluptates accusantium nihil rerum dicta?</p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <footer class="bg-gray-900 text-white">
+      <div class="container mx-auto px-4 py-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="footer-col">
+            <h3 class="text-lg font-bold mb-2">Contact Us</h3>
+            <p class="text-sm text-gray-500">
+              123 Main St.<br />
+              Suite 101<br />
+              Anytown, USA
+            </p>
+          </div>
+          <div class="footer-col">
+            <h3 class="text-lg font-bold mb-2">Connect With Us</h3>
+            <ul class="list-none">
+              <li class="mb-2"><a href="#" class="text-sm text-gray-500 hover:text-white">Facebook</a></li>
+              <li class="mb-2"><a href="#" class="text-sm text-gray-500 hover:text-white">Twitter</a></li>
+              <li><a href="#" class="text-sm text-gray-500 hover:text-white">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- footer section end -->
+
+    <script src="dist/js/script.js"></script>
+  </body>
+</html>
